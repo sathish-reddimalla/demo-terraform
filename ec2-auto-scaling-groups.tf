@@ -44,7 +44,7 @@ resource "aws_autoscaling_group" "asg_web" {
     # placement_group       = "${aws_placement_group.pg_web.id}"
     launch_configuration    = "${aws_launch_configuration.lc_web.name}"
 
-    availability_zones      = ["${split(",", var.availability_zones)}"]
+    #availability_zones      = ["${split(",", var.availability_zones)}"]
     vpc_zone_identifier     = ["${aws_subnet.us-east-1a-public.id}","${aws_subnet.us-east-1b-public.id}"]
 
     min_size                = "${var.asg_min}"
