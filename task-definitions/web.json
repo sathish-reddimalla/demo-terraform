@@ -1,0 +1,35 @@
+[
+	{
+		"name": "sample-demo-ctr-web",
+		"image": "nginx",
+		"cpu": 0,
+		"memory": 600,
+		"memoryReservation": 300,
+		"links": null,
+		"portMappings": [
+			{
+				"containerPort": 80,
+				"hostPort": 0,
+				"protocol": "tcp"
+			}
+		],
+		"essential": true,
+		"entryPoint": null,
+		"command": null,
+		"environment": null,
+		"mountPoints": null,
+		"volumesFrom": null,
+		"hostname": null,
+		"user": null,
+		"workingDirectory": null,
+		"disableNetworking": null,
+		"privileged": null,
+		"readonlyRootFilesystem": null,
+		"dnsServers": null,
+		"dnsSearchDomains": null,
+		"extraHosts": null,
+		"dockerSecurityOptions": null,
+		"dockerLabels": null,
+		"ulimits": null
+	}
+]
